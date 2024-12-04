@@ -87,6 +87,15 @@
         #title {
             font-size: 30px;
         }
+
+        .fixed-image {
+            position: fixed;
+            bottom: 1px;
+            right: 1px;
+            width: 400px;
+            /* Đặt kích thước phù hợp cho hình ảnh */
+            height: auto;
+        }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -132,7 +141,7 @@
         <h1 class="text-center my-4">Các Địa Danh Nổi Bật</h1>
         <div id="locations"></div>
     </div>
-
+    <img src="/image/hinh den vau.png" class="fixed-image" alt="Fixed Image">
     <script>
         var locations = [
             {
