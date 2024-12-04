@@ -88,6 +88,34 @@
             left: 1000px;
             z-index: 3;
         }
+
+        @keyframes fadeOut {
+            from {
+                opacity: 1;
+            }
+
+            to {
+                opacity: 0;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .fade-out-hover {
+            animation: fadeIn 2s forwards;
+        }
+
+        .fade-out-hover:hover {
+            animation: fadeOut 2s forwards;
+        }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -161,7 +189,7 @@
                 <span class="sr-only">Sau</span>
             </a>
         </div>
-        <img src="/image/hinh den vau.png" alt="denvau" id="hinhdenvau">
+        <img src="/image/hinh den vau.png" alt="denvau" id="hinhdenvau" class="fade-out-hover">
     </div>
 
     <!-- JavaScript Libraries -->
